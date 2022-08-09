@@ -1,4 +1,4 @@
 bases:
-- ../../base
+- ../../../base
 resources:
 - subscription-streams.yaml
