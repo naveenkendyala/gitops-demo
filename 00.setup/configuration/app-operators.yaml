@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: operators-app
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: streams-demo
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: apps/operators/overlays
+    repoURL: https://github.com/naveenkendyala/gitops-demo
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true

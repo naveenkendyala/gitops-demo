@@ -3,6 +3,8 @@ oc apply -f configuration/argo-subscription.yaml
 
 # Ensure that all resoures are running for Argo before proceeding to next step
 # Create a GitOps Application
+oc apply -f configuration/streams-app.yaml
+
 
 
 
