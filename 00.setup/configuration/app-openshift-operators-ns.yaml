@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: apps/operators/overlays/operators
+    path: apps/operators/overlays/openshift-operators-ns
     repoURL: https://github.com/naveenkendyala/gitops-demo
     targetRevision: main
   syncPolicy:

@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: apps/streams-cluster/overlays/streams-cluster
+    path: apps/streams-cluster/overlays/streams-demo-ns
     repoURL: https://github.com/naveenkendyala/gitops-demo
     targetRevision: main
   syncPolicy:

@@ -1,14 +1,13 @@
 # Install the Operator
 oc apply -f configuration/argo-subscription.yaml
 
+# Ensure that all resoures are running for Argo before proceeding to next step
+
+# Cretae Operators as necessary for openshift-operator namespace
 oc apply -f configuration/app-operators.yaml
 
-# Ensure that all resoures are running for Argo before proceeding to next step
 # Create a GitOps Application
 oc apply -f configuration/app-streams.yaml
-
-
-
 
 # ------------------------------------------------------------------------------------------------------------
 # Deleting the ArgoCD
