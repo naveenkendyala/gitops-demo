@@ -5,16 +5,16 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: openshift-operators
+    namespace: streams-demo
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: apps/streams/overlays
+    path: apps/streams-cluster/overlays/streams-cluster
     repoURL: https://github.com/naveenkendyala/gitops-demo
     targetRevision: main
   syncPolicy:
     automated:
-      prune: false
+      prune: true
       selfHeal: false
     syncOptions:
     - CreateNamespace=true
