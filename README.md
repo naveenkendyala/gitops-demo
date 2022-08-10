@@ -1,7 +1,5 @@
 ## **OpenShift GitOps : Using ArgoCD**
 
----
-
 This repository demonstrates the below point(s)
 * Concepts of OpenShift GitOps using ArgoCD
 * Installing GitOps Operator on OpenShift cluster
@@ -10,3 +8,4 @@ This repository demonstrates the below point(s)
 
 
 ---
+
