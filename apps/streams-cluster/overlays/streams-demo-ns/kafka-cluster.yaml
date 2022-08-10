@@ -1,7 +1,7 @@
 kind: Kafka
 apiVersion: kafka.strimzi.io/v1beta2
 metadata:
-  name: my-cluster
+  name: my-cluster-01
   namespace: streams-demo
 spec:
   kafka:
