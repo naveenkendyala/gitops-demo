@@ -1,12 +1,12 @@
 kind: Kafka
 apiVersion: kafka.strimzi.io/v1beta2
 metadata:
-  name: my-cluster-01
+  name: my-cluster
   namespace: streams-demo
 spec:
   kafka:
     version: 3.1.0
-    replicas: 4
+    replicas: 3
     listeners:
       - name: plain
         port: 9092
