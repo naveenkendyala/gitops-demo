@@ -7,7 +7,7 @@ This repository demonstrates the below point(s)
 * Using GitOps to install Applications : AMQ Streams Cluster \[ aka Kafka cluster \]
 
 ```bash
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
 
 # Install the Operator
 oc apply -f 00.setup/configuration/subscription-argo.yaml
@@ -20,7 +20,7 @@ oc apply -f 00.setup/configuration/app-openshift-operators-ns.yaml
 # Create a GitOps Application
 oc apply -f 00.setup/configuration/app-streams-demo-ns.yaml
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
 
 # Deleting the ArgoCD
 
@@ -34,7 +34,7 @@ oc apply -f 00.setup/configuration/app-streams-demo-ns.yaml
 
 # Uninstall the Operator itself from UI
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
 ```
 
 ---
