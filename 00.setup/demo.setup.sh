@@ -1,15 +1,15 @@
 # ------------------------------------------------------------------------------------------------------------
 
 # Install the Operator
-oc apply -f configuration/subscription-argo.yaml
+oc apply -f 00.setup/configuration/subscription-argo.yaml
 
 # Ensure that all resoures are running for Argo before proceeding to next step
 
 # Cretae Operators as necessary for openshift-operator namespace
-oc apply -f configuration/app-openshift-operators-ns.yaml
+oc apply -f 00.setup/configuration/app-openshift-operators-ns.yaml
 
 # Create a GitOps Application
-oc apply -f configuration/app-streams-demo-ns.yaml
+oc apply -f 00.setup/configuration/app-streams-demo-ns.yaml
 
 # ------------------------------------------------------------------------------------------------------------
 
